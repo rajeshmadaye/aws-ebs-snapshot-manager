@@ -6,7 +6,7 @@ This project contains source code and supporting files for a AWS Snapshot Manage
 
 User should use below command to install this package.
 ```bash
-root@vps123456:/opt#pip install git+https://myaws/codecommit/SSIAMIScripts
+root@vps123456:/opt#pip install git+https://github.com/rajeshmadaye/aws-snapshot-mgr
 ```
 
 ## Post Installation Components
