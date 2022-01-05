@@ -25,6 +25,12 @@ Below are list of AWS services used in this project.
 
 ## Package installation steps
 
+User should ensure below packages are locally installed on your server in case you are facing any issue to install this. 
+```bash
+ pip install wheel
+ pip install setuptools
+```
+
 User should use below command to install this package.
 ```bash
 root@vps123456:/opt#pip install git+https://github.com/rajeshmadaye/aws-ebs-snapshot-manager
