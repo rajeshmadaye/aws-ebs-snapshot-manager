@@ -5,8 +5,8 @@
 ## Author           : Rajesh Madaye
 ## Copyright        : Copyright 2022, Snapshot Manager
 ## Version          : 1.0.0
-## Mmaintainer      :
-## Email            :
+## Mmaintainer      : Rajesh Madaye
+## Email            : rajeshmadaye@yahoo.com
 ## Status           : Developoment Done
 ##
 ##*******************************************************************************
@@ -21,7 +21,7 @@
 ##
 # *******************************************************************************
 # Version Info:
-# 1.0.0 : 05-Jan-2022 : First draft development in progress
+# 1.0.0 : 05-Jan-2022 : First draft development in completed
 #
 # *******************************************************************************
 import logging
@@ -171,7 +171,6 @@ class SnapshotManager:
     snapshotList = []
     snapshots = {}
     accountID = boto3.client('sts').get_caller_identity().get('Account')
-    # ec2 = boto3.client('ec2', region_name=self.region)
     filters   = self.getSnapshotFilters()
     deltaTime = datetime.now(pytz.utc) - timedelta(days=self.olderDays)
     paginator = self.ec2.get_paginator('describe_snapshots')
@@ -204,7 +203,6 @@ class SnapshotManager:
     rc = False
     volumes = {}
     volumeList = []
-    # ec2 = boto3.client('ec2', region_name=self.region)
     paginator = self.ec2.get_paginator('describe_volumes')
     response_iterator = paginator.paginate()
 
@@ -229,7 +227,6 @@ class SnapshotManager:
     marker = None
     instanceList = []
     instances = {}
-    # ec2 = boto3.client('ec2', region_name=self.region)
     paginator = self.ec2.get_paginator('describe_instances')
     response_iterator = paginator.paginate()
 
