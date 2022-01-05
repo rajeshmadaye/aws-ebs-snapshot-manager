@@ -6,7 +6,8 @@ This project contains source code and supporting files for a AWS Snapshot Manage
 
 User should use below command to install this package.
 ```bash
-root@vps123456:/opt#pip install git+https://github.com/rajeshmadaye/aws-snapshot-mgr
+root@vps123456:/opt#pip install git+https://github.com/rajeshmadaye/aws-ebs-snapshot-manager
+
 ```
 
 ## Post Installation Components
@@ -49,3 +50,8 @@ User should use below command to uninstall snapshotManager package.
 ```bash
 root@vps123456:/opt#pip uninstall snapshotManager
 ```
+
+## License
+MIT
+
+**Free Software, Keep Learning!**
