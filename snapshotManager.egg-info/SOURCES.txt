@@ -1,0 +1,7 @@
+README.md
+setup.py
+snapshotManager.py
+snapshotManager.egg-info/PKG-INFO
+snapshotManager.egg-info/SOURCES.txt
+snapshotManager.egg-info/dependency_links.txt
+snapshotManager.egg-info/top_level.txt
