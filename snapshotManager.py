@@ -49,7 +49,7 @@ except:
 ##***********************************************************************
 ## Define global variables
 ##***********************************************************************
-PROFILE         = 'rajesh'    # AWS Profile name
+PROFILE         = None        # AWS Profile name
 DEF_ACTION      = 'list'      # Default actions will be list all snapshots from given region.
 DEF_OLDER_DAYS  = 0           # Default all snapshots will be considered.
 DEF_TAGS        = None        # Default tags in key-value pair is none
@@ -70,7 +70,8 @@ LOG_LEVEL         = logging.DEBUG #1. CRITICAL, 2. ERROR, 3. WARN, 4. INFO, 5. D
 ##***********************************************************************
 ## Setup boto3 module
 ##***********************************************************************
-boto3.setup_default_session(profile_name=PROFILE)
+if PROFILE:
+  boto3.setup_default_session(profile_name=PROFILE)
 
 ##***********************************************************************
 ## Define class structure
