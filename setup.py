@@ -14,7 +14,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/rajeshmadaye/aws-snapshot-mgr.git",
     packages=setuptools.find_packages(),
-    install_requires=['tendo'],
+    install_requires=['singleton'],
     classifiers=[
        "Programming Language :: Python :: 3",
        "License :: OSI Approved :: MIT License",
