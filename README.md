@@ -80,5 +80,3 @@ root@vps123456:/opt#pip uninstall snapshotManager
 
 ## License
 MIT
-
-**Free Software, Keep Learning!**
